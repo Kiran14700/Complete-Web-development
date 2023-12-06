@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Before and after pseudo selector</title>
+    <style>
+        body{
+            background-color: black;
+            color: white;
+            
+            margin: 0;
+            padding: 0;
+        }
+            header::before{
+                
+         
+            background: url("https://images.unsplash.com/photo-1688488994192-e55620dfe5bf?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1974&q=80") no-repeat center center/cover;
+            content: "";
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            TOP:0;
+            left: 0;
+/*  IT INCREAES THE HIGHLIGHT */
+            opacity: 0.3;
+        
+        }
+
+      
+        .navigation{
+            /* column row ma ho jayega */
+            display: flex;
+            font-size: 20px;
+
+
+        }
+        li{
+            list-style: none;
+            padding: 34px 24px;
+        }
+        header{
+            display: flex;
+        flex-direction:column ;
+        }
+        section{
+            margin: 3px 23px;
+            display: flex;
+            flex-direction: column;
+            height: 344px;
+            border: 2px solid;
+            border: none;
+            justify-content: center;
+            align-items: center;
+        }
+        /* content pehla ya badma kar skatah  ha */
+            section::before{
+                content: 'This is a content';
+            }
+        
+            /* section::after{
+                content: 'This is a content';
+            } */
+            h1{
+                font-size: 4rem;
+            }
+            p{
+                text-align: center;
+            }
+                
+            
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="navbar"></nav>
+        <ul class="navigation">
+            <li class="item">Home</li>
+            <li class="item">About</li>
+            <li class="item">Services</li>
+            <li class="item">Contact Us</li>
+        </ul>
+    </nav>
+</header>
+    <section>
+        <h1> Welcome to coding world</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta hic consequuntur laudantium, incidunt rem ipsa dolorem totam assumenda! Recusandae deserunt ab atque ex at cumque ducimus ipsum quos iusto provident.</p>
+    </section>
+    <hr>
+        
+    
+</body>
+</html>

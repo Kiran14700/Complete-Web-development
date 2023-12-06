@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* posiiton: staic(default) ,abolsute,relative,stikcy,fixed */
+        .container{
+            border: 2px solid black;
+            background-color: khaki;
+            height: 3444px;
+        }
+        .box{
+            /*  display: inline-block; ise krne box's ek line ma ajatih ha */
+            display: inline-block;
+            border: 2px solid red;
+            width: 150px;
+            height: 150px;
+            margin: 2px;
+        }
+        #box3{
+            /* /* if we use  9position: relative;) then woh uski normal position se rotate karega ham isa konse bhi side me move kar saktah ha (top,bottom,left,right)  */
+        
+            /* position: relative;
+            top: 8px;
+            left:134px; */
+            /* sticky tab us ekrta ha jabhame woh icon page pe chipka hua rah matlab aga rham scroll kare toh sath sath neeche aya ya upar jaye */
+        /* position: sticky;
+        top: 0px;  */
+    
+    position: fixed;
+    right:2px;
+    bottom: 2px;
+
+
+}
+    
+    </style>
+</head>
+<body>
+    <div class="container">
+    <div class="box" id="box1">1</div>
+    <div class="box" id="box2">2</div>
+    <div class="box" id="box3">3</div>
+    <div class="box" id="box4">4</div>
+</div>
+</body>
+</html>

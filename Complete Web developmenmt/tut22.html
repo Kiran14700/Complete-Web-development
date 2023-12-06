@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pseudo selectors & more designing</title>
+    <style>
+        .container{
+            border: 2px solid red;
+            background-color: rgb(223, 245, 201);
+            padding: 34px;
+            margin:34px auto;
+            width: 666px;
+        }
+        a{
+            /*  agar hame koi undeline hatani ha toh ise use krte ha */
+            text-decoration: none;
+            color: black;
+           
+        }
+      
+        /*  (hover) ise tab use krta ha jab hame agar word pe arrow lekr jaye toh uska color change ho jaye */
+        a.hover{
+       
+            color: rgb(0, 0, 0);
+            background-color: rgb(221, 92, 92);
+        }
+        /* agar hame aisa dikhane ha site visted ha toh  visted use krta ha*/
+        a:visited{
+            
+            background-color : yellow;
+
+        }
+        /* ise tab use krta ha jab hame word pr clikc kre aur pta chala ki uspr click kiya tah */
+                a:active
+                {
+                    background-color: blue;
+                }
+
+                
+                
+
+            
+        .btn:hover{
+            color: darkgoldenrod;
+            background-color: blanchedalmond;
+            border: 2px solid black;
+                   }
+
+     
+        .btn{
+            background-color: lightpink;
+            padding: 6px;
+            /* border gayab krne ha side ka toh border:none; use krnka */
+            border:none;
+            /* agar hame button pe cursor dikhane ha toh (cursor: pointer) ka istemaal kre  */
+            cursor: pointer;
+            /* agar hame font ka size badane ha toh font-size ka istemaal  kre */
+            font-size: 13px;
+            border-radius: 4px;
+
+        }
+
+
+    </style>
+
+</head>
+<body>
+    <div class="container" id="cont1">
+    <h3>This is my heading</h3>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vel quod culpa pariatur. Odit dolores dolor et. Sit neque, doloremque sint inventore itaque hic incidunt at. A saepe optio vitae laborum?</p>
+    <a href="http://google.com" class="btn">Read more</a>
+    <button class="btn">Contact us </button>
+ 
+</div>
+</body>
+</html>

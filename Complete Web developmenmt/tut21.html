@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aligmnent</title>
+    <style>
+        body{
+            background-color: rgb(255, 255, 240);
+        }
+        {
+            box-sizing:border-box
+
+        }
+        
+        .container{
+            width: 900px;
+            border:3px solid purple;
+            /*  if we use margin auto then it goes on cneter */
+            margin: 33px auto;
+            background-color: burlywood;
+
+        }
+        .item{
+            border: 3px solid grey;
+            margin: 12px 3px;
+            padding: 12px 3px;
+            background: rgb(248, 248, 238);
+        }
+        #fruit{
+            /* we move the object using float button */
+            float: left;
+            width: 48%;
+        }
+        #fcomputer{
+            /* we move the object using float button */
+            float: ;
+            width: 52%;
+            
+        }
+        #Stationery{
+            /* we move the object using float button */
+            /* float: left; */
+            width: 99%;
+            width: 98%;
+            /* if we use clear then other sides cant overlap */
+            clear: both;
+        }
+        p, h3{
+            text-align: justify;
+            /* text-align: center;
+            text-align: left;
+            text-align: right; */
+        }
+        h1{
+            margin: 25px auto;
+            width: 460px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Welcome to my store</h1>
+        <div id="fruit" class="item">
+            <h3>Fruits</h3>
+            <p id="fruitpara" class="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora ex quo, eum blanditiis ipsum delectus itaque aperiam fugiat possimus soluta. Ab fugit cum laboriosam nostrum incidunt repellat cumque, ipsum aut?</p>  
+        </div>
+        <div id="computer" class="item">
+            <h3>computer</h3>
+            <p id="computerpara" class="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora ex quo, eum blanditiis ipsum delectus itaque aperiam fugiat possimus soluta. Ab fugit cum laboriosam nostrum incidunt repellat cumque, ipsum aut?</p>  
+        </div>
+        <div id="Stationery" class="item">
+            <h3>Stationery</h3>
+            <p id="Stationery" class="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora ex quo, eum blanditiis ipsum delectus itaque aperiam fugiat possimus soluta. Ab fugit cum laboriosam nostrum incidunt repellat cumque, ipsum aut?</p>  
+        </div>
+        
+    </div>
+</body>
+</html>

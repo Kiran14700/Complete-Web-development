@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox tutorials</title>
+    <style>
+        /* body{
+            height: 10000px; }*/
+    
+        .container {
+            height: 544px;
+            width: 100%;
+            border: 2px solid black;
+            /* it  is used when we need to flex the object */
+            display: flex;
+            flex-direction: row;
+            /* flex-direction: column;
+            flex-direction: row-reverse; */
+            /* flex-direction: column-reverse;  */
+            /* page jab fold ke toh sab blacks proper page me ana chhiya isliya flex wrap ka jse krt ahai */
+            /* flex-wrap: wrap; */
+            /* flex-wrap: wrap-reverse; */
+            /* flex-direction: row-reverse;flex-wrap: wrap-reverse;  os fucntion ma yeh dono sath ma kaam krte hai */
+             /* flex-flow: row-reverse wrap; */
+
+             /* justify-content: center;
+             justify-content: space-between;
+             justify-content: space-evenly;
+             justify-content: space-around; */
+
+             /* values ko beech ma lana */
+             /* align-items: center; */
+             /* align-items: flex-end;
+             /* align-items: flex-start;
+             align-items: stretch; */
+
+             
+
+
+        }
+
+        .item {
+            background-color: rgb(255, 71, 86);
+            border: 2px solid green;
+            margin: 10px;
+            padding: 3px;
+            width: 200px;
+            height: 200px;
+
+        }
+        /* jiska order jyad ahoga woh box last ma jayega */
+        /* flew grow jitna jyada doge utna space consume karega */
+
+        #item-1{ order : 1;   
+        flex-grow: 3;    }
+        #item-2{  order: 0; 
+            /* ya block ki value shrink karta ha jab fold hotah ha tab */
+        flex-shrink: 6;     }
+        #item-3{        }
+
+          
+    </style>
+
+</head>
+
+<body>
+    <h1>
+        This is Flex tutorials
+    </h1>
+    <div class="container">
+        <div class="item" id="item-1">First box
+
+        </div>
+        <div class="item" id="item-2">Second box</div>
+        <div class="item" id="item-3">Third box</div>
+        <div class="item" id="item-4">fourth box</div>
+        <div class="item" id="item-5">Fifith box</div>
+        <div class="item" id="item-6">Sixth box
+        </div>
+
+</body>
+
+</html>

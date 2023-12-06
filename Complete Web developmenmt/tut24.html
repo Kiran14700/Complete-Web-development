@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Display property</title>
+    <style>
+        /* ase likne se sab jagah box szing ho jayega */
+        *{
+            box-sizing: border-box;
+        }
+    
+        /* body{background-color: black} */
+         
+        header{
+            width: 10%;
+            border: 2px solid rgb(0, 89, 255);
+            margin: auto;
+        }
+        img{
+            width: 52px;
+            display: block;
+            margin: auto;
+        }
+        h3{
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            margin: 0px;
+            color: red;
+            text-align: center;
+           
+        }
+        .box{
+            border: 4px solid red;
+            background-color: grey;
+            margin: 4px 0px;
+            padding: 23px;
+            /*     display: inline-block;) ise use krne se block horizontal side me jaatah ha yaniki in-line ho jatah ha  */
+            display: inline-block;
+            box-sizing: border-box;
+            width: 33%;
+        }
+        .container{
+            margin: auto;
+            width: 1200px;
+        }
+            
+            
+    </style>
+</head>
+<body>
+    <header class="top">
+        <img src=https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRDE1m04_kN2U2K51p6yskWDoixp2yGX9wuhg&usqp=CAU" alt="">
+        <h3>Welcome to rani's blog </h3>
+    </header>
+    <div class="box">
+        <h4 class="heading">Heading</h4>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. A, eaque, reiciendis itaque aut accusamus maxime tempora tempore ullam fugit est eligendi exercitationem deserunt perferendis dolorem quod repudiandae ab explicabo in?</p>
+    </div>
+    <div class="box">
+        <h4 class="heading">Heading</h4>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. A, eaque, reiciendis itaque aut accusamus maxime tempora tempore ullam fugit est eligendi exercitationem deserunt perferendis dolorem quod repudiandae ab explicabo in?</p>
+    </div>
+    <div class="box">
+        <h4 class="heading">Heading</h4>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. A, eaque, reiciendis itaque aut accusamus maxime tempora tempore ullam fugit est eligendi exercitationem deserunt perferendis dolorem quod repudiandae ab explicabo in?</p>
+    </div>
+    
+</body>
+</html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>More on selectors </title>
+</head>
+
+<body>
+    <style>
+        h1 {
+            background-color: red;
+            text-align: center;
+            color: black;
+            font-weight: bold;
+        }
+
+        /* div li p{
+        color: yellow;
+        background-color: green;
+        font-weight: bold;
+    } */
+        /* iska matlab agar div ke baad jo bhi p hai uspr laga hogi yeh style */
+        /* div > p{
+        color: yellow;
+        background-color: green;
+        font-weight: bold;
+    }             */
+    /* 
+    if p is right after div i.e p is the next sibling of div */
+    
+        /* div l+p {
+            color: rgb(255, 174, 0);
+            background-color: green;
+            
+        } */
+    </style>
+
+</body>
+<h1>more on selectors</h1>
+<div class="container">
+    <div class="row">
+        <ul>
+            ,<li class="item">
+                <p>this is anotheir paragraph inside li</p>
+            </li>
+            <li>this will not get affected</li>
+        </ul>
+        <p>this is a paragraph</p>
+    </div>
+    <p>this is anotheir paragraph</p>
+</div>
+<p>this is outermost paragraph</p>
+</div>
+
+</html>

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box shadow and text shadow</title>
+</head>
+<style>
+    .container{
+        display: flex;
+    }
+    .card{
+        padding: 23px 12px;
+        /* border: 2px solid red; */
+        margin: 23px 12px;
+        background-color: burlywood;
+
+        /* box-shadow: off-set x offset y color; */
+        /* box-shadow: off-set x offset y  blur radius color; */
+        /* box-shadow: off-set x offset y  blur radius spread radius color; */
+                /*it gives shadow on back side  */
+        /* box-shadow: 10px 13px green; */
+        /* if you add one more px then is glow its called blur radius */
+     
+        /* box-shadow: 10px 5px 12px green; */
+        /* if you want upper then use negative numbers */
+        /* box-shadow: -10px -13px green; */
+        /* blood radius   becomes shadow in black */
+        /* box-shadow: -7px -5px 12px green; */
+        /* if you add on emore then it spread on the backgorund */
+        /* box-shadow: -7px -5px 12px 13px green; */
+        /* it increase the darkness */
+        /* box-shadow: -7px -5px 12px 13px rgba(34, 201, 201, 0.5); */
+        /* you can use two ore multiple box shaodws */
+        box-shadow: 3px 5px rgb(255, 115, 0) ,5px 5px rgb(19, 214, 19);
+        /* in text shadow i blurs text */
+       
+    }
+    .card h2{
+        /* spread radius doesnt work in text shadow */
+        /* text-shadow: 2px 2px rgb(0, 255, 191); */
+
+        text-shadow: 2px 2px 3px rgb(0, 255, 191);
+        /* if we use negative keys then it goes on uppersight */
+        text-shadow: -2px -2px 3px rgb(0, 255, 191);
+    }
+
+   
+   
+</style>
+<body>
+    <div class="container">
+        <div class="card" id="card-1">
+            <h2>HTML course</h2>
+        <p> it is an HTML course here we will learn  the first part of frond end develpment 
+            
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta porro dicta facere quas sunt ad minus veritatis accusantium dolor, aliquam molestiae natus! Dignissimos ipsa nostrum sit vero quasi repellendus nisi?</p></div>
+        <div class="card" id="card-2">
+            <h2>CCSS course</h2>
+        <p>IT is an CSS course , herer we will learn how to design 
+            HTML , it gives design to html nd mke page beautiful
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit aliquid animi mollitia expedita! Corporis accusamus accusantium, tempore impedit, earum soluta qui, ea quidem explicabo eius possimus mollitia? Exercitationem, laborum ratione.
+        </p></div>
+        <div class="card" id="card-3">
+            <h2>Card3</h2>
+        <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laudantium dolore delectus, assumenda id, ipsam neque error cupiditate placeat in voluptas culpa? Quidem natus possimus sunt nisi, veniam laboriosam inventore ullam!
+        </p></div>
+    </div>
+    
+</body>
+</html>

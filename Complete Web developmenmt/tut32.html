@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Attribute and nth child pseudo selectors</title>
+    <style>
+        .container {
+            display: block;
+            width: 233px;
+            margin: auto;
+
+
+        }
+
+        input {
+            display: block;
+
+        }
+
+        /* ek particular attribute ko target krne ke liye ise use krta ha */
+        input[type="text"] {
+            padding: 23px;
+            border: 2px solid red;
+
+
+        }
+        a[target]{
+            font-size: 44px;
+            color: rgb(255, 230, 0);
+        }
+        a[target="_self"]{
+            font-size: 44px;
+            color: rgb(0, 26, 255);
+        }
+        input[type="email"]{
+            color: yellow;
+            border: 4px solid rgb(255, 0, 200);
+        }
+        /* this will apply css on third child */
+        li:nth-child(3){
+            color: cyan;
+            border: 2px solid black;
+        }
+        /* har dusra child pr color marne chahtah ho toh */
+        li:nth-child(2n+0){
+            color: cornflowerblue;
+        }
+        li:nth-child(3n+3){
+            color: rgb(237, 100, 191);
+        }
+        li:nth-child(odd){
+            background-color: green;
+        } 
+        li:nth-child(even){
+            background-color: rgb(0, 34, 128);
+        } 
+        
+
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>
+            <a href="http://google.com" target="_blank">go to google</a>
+            <a href="http://facebook.com" target="_self">go to facebook</a>
+        </h1>
+        <form action="" class="form-control">
+            <input type="Email" placeholder="Enter your Email">
+            <input type="text" placeholder="Enter your name">
+            <input type="Password" placeholder="Enter your password">
+            <input type="Submit" placeholder="Submit">
+        </form>
+
+        <ul>>
+            <li class="item" id="item-1">Fabulus</li>
+            <li class="item" id="item-2">Kooper</li>
+            <li class="item" id="item-3">Broke</li>
+            <li class="item" id="item-4">Mad</li>
+            <li class="item" id="item-5">hero</li>
+            <li class="item" id="item-5">heroine</li>
+            <li class="item" id="item-5">Silver</li>
+            <li class="item" id="item-5">Dcousto</li>
+            <li class="item" id="item-5">ganja</li>
+        </ul>
+    </div>
+
+
+
+</body>
+
+</html>

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Keyframes and animations</title>
+</head>
+,<style>
+    .container {
+        display: flex;
+        background-color: pink;
+    }
+
+    .box {
+        background-color: green;
+        width: 250px;
+        height: 250px;
+        position: relative;
+        animation-name: kiran2;
+        /* kitna sec chalega */
+        animation-duration: 8s;
+        /* kitna baar anaimation chalega */
+        animation-iteration-count: 3;
+        /*  if you write infiite then animation goes unlimited */
+        /* animation-iteration-count: infinite; */
+        /* if you use forward then it goes forward ans stop, if u applay a lternate  then it goes and get back to its position */
+        /* animation-fill-mode: forwards; */
+        /* animation-fill-mode: alternate; */
+        /* shuru ma slow hoga fir speed load hoga ,agar ease out ki toh iks aulta hoga*/
+        /* animation-timing-function: ease-in; */
+        /* animation-timing-function: ease-out; */
+        /* shuru ma speed hoga fir slow hoga fir firse slw ho jayga */
+        /* animation-timing-function: ease-in-out; */
+        /* iska matlab yeh 3s rukhega fir process karega */
+        /* animation-delay: 3s; */
+        /* yeh functions naimtion ki direction taah krte ha */
+        /* animation-direction: alternate ; */
+        /* these properties  cn be set using this shorthand */
+        /* animation: animation-name animation-duration animation-timing-function animation-delay
+        animation-iteration-count: aniamtion fill node ; */
+        animation: kiran2 5s ease-in 1s 12 backwards;
+    }
+    @keyframes kiran2{
+        0%{top: 0px;
+            left: 0px;
+
+        }
+        25%{
+            top: 250px;
+            left: 0px;
+        }
+        50%{
+            top: 250px;
+            left: 250px;
+        }
+        100%{
+            top: 0px;
+            left: 250px;
+        }
+
+
+       
+    }
+    @keyframes kiran1 {
+        from {
+            width: 200px;
+        }
+
+        to {
+            width: 1400px;
+        }
+    }
+</style>
+
+<body>
+    <div class="container">
+        <div class="box">
+            This is a box
+        </div>
+    </div>
+
+</body>
+
+</html>

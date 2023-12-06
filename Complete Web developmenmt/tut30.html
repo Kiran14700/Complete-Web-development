@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box{
+            font-size: 72px;
+            text-align: center;
+            background-color: red;
+            display: none;
+        }
+        /* agar mujha jab screen fold ho rahi hogi tab kuch dikhana ha tab yeh fucntion use hotih ha  */
+        @media (max-width:300px){
+            #box-1{
+                display: block;
+            }
+        }
+        @media (max-width:500px) and (min-width:300px){
+            #box-2{
+                display: block;
+            }
+        }
+    </style>
+</head>
+<body>
+    <DIV class="box" id="box-1">Mai ek iphone hoon</DIV>
+    <DIV class="box" id="box-2">mai ek tablet hoon</DIV>
+    <DIV class="box" id="box-3">Mai ek computer hoon</DIV>
+    <DIV class="box" id="box-4">mai chutiya hu</DIV>
+    
+</body>
+</html>
